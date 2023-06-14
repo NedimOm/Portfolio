@@ -1,0 +1,95 @@
+* {
+	font-family: "Georgia", sans-serif;
+	font-size: 17px;	
+}
+
+body{
+	background-color: lightcyan;
+}
+
+.header{
+	margin-bottom: 100px;
+}
+
+.footer {
+	margin-top: 100px;
+}
+
+.boja{
+	background-color: #416673 !important;
+	color: white;
+}
+
+.hoverslike:hover{
+	transform: scale(1.4);
+}
+
+#logo{
+	width:45px;
+}
+
+nav {
+	font-size: 17px;
+	font-weight: normal;
+}
+
+nav ul li:hover{
+	color:white !important;
+	background-color:lightcyan;
+	border-radius: 5px;
+}
+
+.havar:hover{
+	color:white !important;
+	background-color:#416673;
+	border-radius: 5px;
+}
+
+button:hover{
+	color:white !important;
+}
+
+.hoverslike:hover{
+	transform: scale(1.4);
+}
+
+#pretrazi{
+	border-color:#008B8B;
+	color:rgba(5,5,5,0.5);
+}
+
+
+#glyp{
+	color:white; 
+	margin-top:10px; 
+	padding-right:5px;
+	padding-left:5px; 
+	font-size:18px;
+}
+
+main, article {
+	text-align: center;
+}
+
+.oblast{
+	 background-color: #ccffff; 
+	 color:white; 
+	 padding: 20px;
+}
+
+.posebnaoblast{
+	background-color: #ccffff; 
+	color:white; 
+	padding: 20px;
+	margin-top: 5px;
+}
+
+.red{
+	margin-top:10px;
+}
+
+/*pronasao rjesenje na netu*/
+/*https://css-tricks.com/fixed-headers-and-jump-links-the-solution-is-scroll-margin-top/*/
+h3{
+	scroll-margin-top: 5rem;
+}

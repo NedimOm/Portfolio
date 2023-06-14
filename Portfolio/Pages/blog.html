@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="icon" type="image/x-icon" href="../Slike/favicon.png">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/519d9e8182.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../css/blogstyle.css">
+	<title>Blog</title>
+</head>
+<body>
+	<header>
+		<div class="header">
+			<nav class="navbar navbar-expand-sm bg-light fixed-top boja">
+			    <div class="container">
+			    	<a class="navbar-brand hoverslike" href="./pocetna.html">
+		      			<img src="../Slike/jatransparentno.png" alt="Moja slika" id="logo" class="rounded-circle "> 
+		    		</a>
+			    	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navigacijskiMeni">
+	      				<span class="navbar-toggler-icon"></span>
+	    			</button>
+	    			<div class="collapse navbar-collapse justify-content-center" id="navigacijskiMeni">
+				        <ul class="navbar-nav">
+					        <li class="nav-item">
+					            <a class="nav-link" href="./pocetna.html">O meni</a>
+					        </li>
+					        <li class="nav-item">
+					            <a class="nav-link active" href="#">Blog</a>
+					        </li>
+					        <li class="nav-item">
+					      	    <a class="nav-link" href="./galerija1.html">Galerija 1</a>
+					        </li>
+					        <li class="nav-item">
+					      	    <a class="nav-link" href="./galerija2.html">Galerija 2</a>
+					        </li>
+					    </ul>
+		    				<form class="d-flex">
+		    					<span class="fas fa-search" id="glyp"></span> 
+		      					<input class="form-control me-2" type="search" placeholder="Pretraži">
+		      					<button class="btn btn-outline-success" id="pretrazi" type="submit"> Pretraži</button>
+		    				</form>
+				    </div>
+			  	</div>
+			</nav>
+		</div>
+	</header>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-sm-3 oblast okvir1">
+				<aside>
+					<main>
+						<h1>Arduino</h1>
+					</main>
+					<ul>
+						<li>
+							<a href="#staje">Šta je Arduino?</a>
+						</li>
+						<li>
+							<a href="#izgledarduina">Izgled Arduina</a>
+						</li>
+						<li>
+							<a href="#programiranjearduina">Programiranje Arduina</a>
+						</li>
+					</ul>
+				</aside>
+			</div>
+
+			<div class="col-sm-6 oblast">
+				<article>
+					<main>
+						<h4 id="staje">Šta je Arduino?</h4>
+					</main>
+					<p>
+						Arduino je ime za otvorenu računarsku i softversku platformu koja omogućava dizajnerima i
+						programerima stvaranje uređaja i naprava koje omogućuju spajanje računara s fizičkim
+						svijetom.
+						<br><br>
+						Arduino je stvorila italijanska tvrtka SmartProjects, 2005. godine, koristeći 8-bitne
+						mikrokontrolere Atmel AVR, da bi stvorili jednostavnu, malu i jeftinu platformu s kojom bi
+						mogli lakše povezivati računare s fizičkim svijetom. <br>
+						Arduino je ime kafića u kojem su se tvorci
+						projekta sastajali kada su ga stvarali. <br>
+						Postoji oko trideset vrsta mikrokontrolera, oni se međusobno razlikuju po veličini, obliku,
+						broju portova...
+						<br><br> Neki od najpoznatijih su:
+						<ul>
+							<li>Arduino Nano</li>
+							<li>Arduino UNO</li>
+							<li>Arduino Mega</li>
+							<li>Arduino Leonardo</li>
+							<li>Arduino Micro</li>
+							<li>Arduino Mini</li>
+						</ul>
+
+						<img src="../Slike/arduino.png" id="slika">
+					</p>
+					
+					<h4 id="izgledarduina">Izgled Arduina</h4>
+					<p>
+						Pinovi su mjesta na koja povezujemo naše komponente, senzore i aktuatore ili ukopčavamo
+						žice. <br> Na samoj pločici to su zapravo te crne rupice u koje ukopčavamo komponente su
+						otisnuti nazivi svakog pina pa će snalaženje prilikom priključivanja biti jednostavnije.<br><br> Svaki
+						pin ima svoj broj. Što se pinova tiče, imamo tri vrste: digitalni, analogni i ostali.<br>
+						Digitalni pinovi su označeni samo sa brojevima 0,1,2,3.. ili sa D0,D1,D2...
+						Ako na takve pinove priključimo LED - nju ćemo moći upaliti i ugasiti. Ako na takav pin
+						priključimo taster, bit ćemo u mogućnosti razaznati je li taster pritisnut ili nije.<br>
+						Analogni pinovi su malo sofisticiraniji pa nisu u mogućnosti samo upaliti ili ugasiti LEDicu,
+						nego je mogu i upaliti na pola njezine jakosti ili vrtiti motor različitim brzinama. Također za
+						primjer, od nekog senzora temperature mogu nam očitati vrijednost temperature koju nam
+						senzor daje. Analogni pinovi se označavaju sa A0,A1,A2... te sa ~0, ~1, ~2...<br><br>
+						Ostali pinovi su:<br><br>
+						5V - Izvor istosmjernog napona od 5V<br>
+						gnd - Negativni pol istosmjernog napona<br>
+						3V3 - Izvor istosmjernog napona 3.3V<br>
+						VIN - Ulaz istosmjernog napona od 7V do 24V. Služi za napajanje s baterije većeg napona ili
+						nekog drugog izvora<br>
+						aref - Referentni analogni napon<br><br>
+						Crni kvadratić na Arduinu naziva se mikrokontroler. To je mozak cijele pločice koji upravlja
+						svime. On kontrolira što se događa na pinovima, očitava signale koji mu dolaze, na njega se
+						sprema kod s računara itd. Konkretan mikrokontroler na većini Arduina je Atmel Atmega328.
+					</p>
+					<img src="../Slike/arduinonano.jpeg" id="slika">
+				</article>
+				<article>
+					<h4 id="programiranjearduina">Programiranje Arduina</h4>
+					<p>
+						Za programiranje Arduino mikrokontrolera koristi se Arduino IDE, okruženje koje je
+						razvijeno od osnivača samog Arduina, za njegovo lakše programiranje. Sintaksa je veoma slična C++u, tačnije kombinacija Jave, C i C++.
+					</p>
+					<p>
+						Uz malo prethodnog znanja iz programiranja, programiranje Arudina izgleda vrlo
+						jednostavno, ali i vrlo zabavno. Pogotovo zabavno za studente, jer napokon nakon
+						toliko programiranja u Pythonu i C++, sada možemo napraviti neki gotov projekat.
+						Vrlo lagano je upravljanje robotom, raznim senzorima, displejima i slično.
+					</p>
+					<div class="video">
+							<iframe  class="responsive-iframe "width="560" height="315" src="https://www.youtube.com/embed/nL34zDTPkcs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+				</article>	
+			</div>
+			<div class="col-sm-3 oblast okvir1">
+				<h5>Ostali članci:</h5>
+				<div class="okvir2">
+					<a href="./blogdio2.html" class="clanci"><img src="../Slike/procesor.png" alt="Procesor" class="img-fluid slicice linkovi">Procesor - CPU</a>
+				</div>
+			</div>
+		</div>			
+	</div>
+
+
+	<footer>
+		<div class="footer">
+			<nav class="navbar navbar-expand-sm bg-light boja">
+		  		<div class="container justify-content-center">
+		    		<ul class="nav navbar-nav">
+		      			<li class="nav-item">
+		      				<a class="nav-link" href="#"><i class="bi bi-arrow-up"></i> Vrati me na početak</a>
+		      			</li>
+		      			<li class="nav-item">
+		      				<a class="nav-link" href="https://www.facebook.com/nomeragich" target="_blank"> <i class="bi bi-facebook"></i> Facebook</a>
+		      			</li>
+		      			<li class="nav-item">
+		      				<a class="nav-link" href="https://www.instagram.com/nedim_omeragic" target="_blank"> <i class="bi bi-instagram"></i> Instagram</a>
+		      			</li>
+		      			<li class="nav-item">
+		      				<a class="nav-link" href="https://ba.linkedin.com/in/nedim-omeragi%C4%87-89a095209" target="_blank"><i class="bi bi-linkedin"></i> LinkedIn</a>
+		      			</li>
+		      				<span class="navbar-text" style="padding-left:5px;">2022 &#169</span>
+		    		</ul>
+		  		</div>
+			</nav>
+		</div>
+	</footer>
+
+
+</body>
+</html>

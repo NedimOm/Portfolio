@@ -1,0 +1,155 @@
+* {
+	font-family: "Georgia", sans-serif;
+	font-size: 17px;	
+}
+
+body{
+	background-color: lightcyan;
+}
+
+.header{
+	margin-bottom: 100px;
+}
+
+.footer {
+	margin-top: 25px;
+}
+
+#logo{
+	width:45px;
+}
+
+.boja{
+	background-color: #416673 !important;
+	color: white;
+}
+
+.hoverslike:hover{
+	transform: scale(1.4);
+}
+
+.hoverslike:hover{
+	transform: scale(1.4);
+}
+
+.boja{
+	background-color: #416673 !important;
+	color: white;
+}
+
+
+nav {
+	font-size: 17px;
+	font-weight: normal;
+}
+
+nav ul li:hover{
+	color:black !important;
+	background-color:lightcyan;
+	border-radius: 5px;
+}
+
+ul li a{
+	color:black;
+}
+
+aside{
+	margin-top: 20px;
+	padding-left: 15px;
+}
+
+/*pronasao rjesenje na netu*/
+/*https://css-tricks.com/fixed-headers-and-jump-links-the-solution-is-scroll-margin-top/*/
+h4{
+	scroll-margin-top: 5rem;
+	padding-top:5px;
+}
+
+h1{
+	text-align: center;
+	padding-right: 200px;
+}
+
+h5{
+	text-align: center;
+}
+
+.slicice{
+	width: 100px;
+	padding-right: 30px;
+}
+
+.clanci{
+	text-align: center;
+	color:black;
+}
+
+
+#slika{
+	width: 70%;
+	height: 100%;
+	text-align: center;
+	border-radius: 5px;	
+}
+
+.havar:hover{
+	color:white !important;
+	background-color:#416673;
+	border-radius: 5px;
+}
+
+button:hover{
+	color:white !important;
+}
+
+#pretrazi{
+	border-color:#008B8B;
+	color:rgba(5,5,5,0.5);
+}
+
+#glyp{
+	color:white; 
+	margin-top:10px; 
+	padding-right:5px;
+	padding-left:5px; 
+	font-size:18px;
+}
+
+.red{
+	margin-top:10px;
+}
+
+.oblast{
+	 background-color:#ccffff; 
+	 color:black; 
+	 padding: 20px;
+}
+
+.okvir1{
+	border-right:1px solid white;
+	border-left:1px solid white;
+}
+
+.okvir2{
+	border:1px solid white;
+}
+
+/*preuzeo sa w3schools*/
+.video {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
+}
+
+
+.responsive-iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  margin-top: 15px;
+}
